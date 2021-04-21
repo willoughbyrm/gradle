@@ -196,3 +196,9 @@ Gradle used to have two ways of publishing artifacts.
 Now, the situation has been cleared and all build should use the `maven-publish` plugin.
 The last remaining artifact of the old way of publishing is the `Upload` task that has been deprecated and scheduled for removal in Gradle 8.0.
 Existing clients should migrate to the <<publishing_maven.adoc#publishing_maven,`maven-publish` plugin>>.
+
+[[base_convention_deprecation]]
+=== Deprecated `java` plugin conventions
+
+The convention properties contributed by the `java` plugin have been deprecated and scheduled for removal in Gradle 8.0.
+They are replaced by the the properties of link:{groovyDslPath}/org.gradle.api.plugins.JavaPluginExtension.html[JavaPluginExtension] which can we configured in the `java {}` block.
